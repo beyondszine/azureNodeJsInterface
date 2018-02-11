@@ -1,3 +1,6 @@
+(function(){
+'use strict';
+
 require('dotenv').config();
 var azure = require('azure-storage');
 var fs  = require('fs');
@@ -83,3 +86,4 @@ module.exports  = {
 
 uploadFileAzure('newdir','/home/beyond/nodejs/samples/awss3try/dashboard_nervecenter.png');
 downloadFileAzure('newdir','dashboard_nervecenter.png');
+})();
